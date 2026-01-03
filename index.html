@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warung Coto Makassar 455</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                  url("assets/gambar_atas.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    /* MENU */
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      background: #fff;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-content {
+      padding: 20px;
+    }
+
+    .menu-content p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #8b0000;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #f7f7f7;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Warung Coto Makassar 455</h1>
+  </header>
+
+  <section id="menu">
+    <h2 class="section-title">Menu Kami</h2>
+
+    <div class="menu-container">
+      <div class="menu-card">
+        <img src="assets/coto_daging.jpg" alt="Coto Makassar" />
+        <div class="menu-content">
+          <p>Dengan Perpaduan daging sapi dan berbagai rempah-rempah diatas mangkuk</p>
+          <div class="price">Rp. 18.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/konro-bakar.jpg" alt="Konro Bakar" />
+        <div class="menu-content">
+          <p>Daging sapi yang dibakar lalu diberi bumbu kacang, menciptakan rasa lezat dan mengenyangkan</p>
+          <div class="price">Rp. 27.500</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="assets/sop-konro.jpg" alt="Sop Konro" />
+        <div class="menu-content">
+          <p>Perpaduan bumbu khas makassar dan daging sapi yang dipotong</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">HUBUNGI KAMI</h2>
+    <p>WA: 082175843857</p>
+    <p>Email: 123coto@contoh.id</p>
+  </section>
+
+  <footer>
+    WEBSITE HANYALAH CONTOH, BUKAN UNTUK TUJUAN BISNIS
+  </footer>
+
+</body>
+</html>
